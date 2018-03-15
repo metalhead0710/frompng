@@ -1,0 +1,230 @@
+/*Font (I thought it was Open Sans, but I may be wrong) */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i');
+
+/*Color Scheme*/
+@light-green: #81D135;
+@header-main-color: #434B54;
+@text-blue: #1896DC;
+@text-grey: #989898;
+@text-black: #000;
+@text-regular: #414141;
+@placeholders: #848484;
+
+@blue-bg: #1896DC;
+@very-light: #ccc;
+@facebook: #3C5A96;
+@twitter: #59ADEB;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.mid-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modal-content {
+  box-shadow: none;
+  border: 0;
+
+  .close-trigger {
+    position: relative;
+    top: -40px;
+    left: 35px;
+    color: #fff;
+    font-size: 35px;
+    background: transparent;
+    border: 0;
+
+    .fa-times-thin:before {
+      content: '\00d7';
+    }
+
+    .fa-plus-thin:before {
+      content: '\f067';
+    }
+  }
+
+  .modal-header {
+    border-bottom: none;
+
+    .nine-o-clock {
+      background: @light-green;
+      float: left;
+      text-align: center;
+      border-radius: 5px;
+      padding: 15px;
+      i {
+        font-size: 2em;
+        margin: 0 2px 0 3px;
+      }
+    }
+    h3, h4 {
+      margin: 2px 0 10px 90px;
+    }
+    h4 {
+      color: @text-grey;
+      font-weight: 600;
+    }
+    .clearfix {
+      border-bottom: 1px solid #e5e5e5;
+    }
+  }
+
+  .modal-body {
+    .indented {
+      margin-left: 25px;
+      h3 {
+        font-weight: 600;
+        color: @header-main-color;
+      }
+      .date-and-time {
+        color: @text-grey;
+        margin: 15px 0;
+        i {
+          font-size: 25px;
+          position: relative;
+          top: 5px;
+          margin-right: 7px;
+        }
+        .author {
+          color: @text-blue;
+        }
+      }
+      .text {
+        color: @text-regular;
+      }
+    }
+    form {
+      a i {
+        font-size: 2.5em;
+        position: absolute;
+        top: -7px;
+        color: @blue-bg;
+      }
+      .power-share {
+        margin-top:  0;
+        font-size:  22px;
+        margin-bottom:  20px;
+        text-align: center;
+        font-weight: 600;
+        color: @header-main-color;
+      }
+      input[type=checkbox] {
+        display:none;
+        + label:before {
+          font-family: FontAwesome;
+          display: inline-block;
+          content: "\f096";
+          letter-spacing: 10px;
+          font-size: 25px;
+          color: @very-light;
+          margin-bottom: -4px;
+        }
+        &:checked + label:before {
+          content: "\f046";
+          letter-spacing: 5px;
+          color: @text-blue;
+        }
+      }
+      .channel {
+        display:  flex;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-weight: 700;
+        .little-heading {
+          font-size: 14px;
+        }
+
+        img {
+          width:45px;
+        }
+        .facebook-fa {
+          color: @facebook;
+        }
+        .twitter-fa {
+          color: @twitter;
+        }
+        .fa-stack {
+          top: .9em;
+          left: -1.7em;
+          width: 1.5em;
+          height: 1.5em;
+          .fa-stack-2x {
+            font-size: 1.5em;
+          }
+          .fa-stack-1x {
+            font-size: 10px;
+            line-height: 2.5em;
+          }
+        }
+        .checkbox {
+          margin-left: auto;
+        }
+      }
+      .add-channel {
+        border: 0;
+        background: transparent;
+        padding: 0;
+        color: @text-blue;
+        margin-bottom: 25px;
+        font-weight: 700;
+        font-size: 16px;
+        img {
+          width: 45px;
+          margin-right: 17px;
+        }
+      }
+      .message {
+        .little-heading {
+          margin-bottom: 15px;
+          line-height: 20px;
+          font-weight: 700;
+
+          .fa-stack {
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            color: @text-grey;
+            .fa-stack-2x {
+              font-size: 20px;
+            }
+          }
+          .customize-for-channels {
+            color: @text-blue;
+            font-weight: 400;
+          }
+        }
+        textarea {
+          resize: none;
+          margin-bottom: 50px;
+        }
+        .action-buttons {
+          .btn {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 16px;
+          }
+          .btn-link {
+            text-decoration: underline;
+            text-decoration-color: #C4C7CA;
+            padding: 10px 25px;
+            color: @text-regular;
+
+          }
+          .btn-primary {
+            background: @text-blue;
+            border-color: @text-blue;
+            padding: 10px 75px;
+            border-radius: 21px;
+          }
+        }
+      }
+    }
+  }
+}

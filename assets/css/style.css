@@ -1,0 +1,198 @@
+/*Font (I thought it was Open Sans, but I may be wrong) */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i');
+/*Color Scheme*/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.mid-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.modal-content {
+  box-shadow: none;
+  border: 0;
+}
+.modal-content .close-trigger {
+  position: relative;
+  top: -40px;
+  left: 35px;
+  color: #fff;
+  font-size: 35px;
+  background: transparent;
+  border: 0;
+}
+.modal-content .close-trigger .fa-times-thin:before {
+  content: '\00d7';
+}
+.modal-content .close-trigger .fa-plus-thin:before {
+  content: '\f067';
+}
+.modal-content .modal-header {
+  border-bottom: none;
+}
+.modal-content .modal-header .nine-o-clock {
+  background: #81D135;
+  float: left;
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px;
+}
+.modal-content .modal-header .nine-o-clock i {
+  font-size: 2em;
+  margin: 0 2px 0 3px;
+}
+.modal-content .modal-header h3,
+.modal-content .modal-header h4 {
+  margin: 2px 0 10px 90px;
+}
+.modal-content .modal-header h4 {
+  color: #989898;
+  font-weight: 600;
+}
+.modal-content .modal-header .clearfix {
+  border-bottom: 1px solid #e5e5e5;
+}
+.modal-content .modal-body .indented {
+  margin-left: 25px;
+}
+.modal-content .modal-body .indented h3 {
+  font-weight: 600;
+  color: #434B54;
+}
+.modal-content .modal-body .indented .date-and-time {
+  color: #989898;
+  margin: 15px 0;
+}
+.modal-content .modal-body .indented .date-and-time i {
+  font-size: 25px;
+  position: relative;
+  top: 5px;
+  margin-right: 7px;
+}
+.modal-content .modal-body .indented .date-and-time .author {
+  color: #1896DC;
+}
+.modal-content .modal-body .indented .text {
+  color: #414141;
+}
+.modal-content .modal-body form a i {
+  font-size: 2.5em;
+  position: absolute;
+  top: -7px;
+  color: #1896DC;
+}
+.modal-content .modal-body form .power-share {
+  margin-top: 0;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  color: #434B54;
+}
+.modal-content .modal-body form input[type=checkbox] {
+  display: none;
+}
+.modal-content .modal-body form input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f096";
+  letter-spacing: 10px;
+  font-size: 25px;
+  color: #ccc;
+  margin-bottom: -4px;
+}
+.modal-content .modal-body form input[type=checkbox]:checked + label:before {
+  content: "\f046";
+  letter-spacing: 5px;
+  color: #1896DC;
+}
+.modal-content .modal-body form .channel {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.modal-content .modal-body form .channel .little-heading {
+  font-size: 14px;
+}
+.modal-content .modal-body form .channel img {
+  width: 45px;
+}
+.modal-content .modal-body form .channel .facebook-fa {
+  color: #3C5A96;
+}
+.modal-content .modal-body form .channel .twitter-fa {
+  color: #59ADEB;
+}
+.modal-content .modal-body form .channel .fa-stack {
+  top: .9em;
+  left: -1.7em;
+  width: 1.5em;
+  height: 1.5em;
+}
+.modal-content .modal-body form .channel .fa-stack .fa-stack-2x {
+  font-size: 1.5em;
+}
+.modal-content .modal-body form .channel .fa-stack .fa-stack-1x {
+  font-size: 10px;
+  line-height: 2.5em;
+}
+.modal-content .modal-body form .channel .checkbox {
+  margin-left: auto;
+}
+.modal-content .modal-body form .add-channel {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: #1896DC;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 16px;
+}
+.modal-content .modal-body form .add-channel img {
+  width: 45px;
+  margin-right: 17px;
+}
+.modal-content .modal-body form .message .little-heading {
+  margin-bottom: 15px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.modal-content .modal-body form .message .little-heading .fa-stack {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  color: #989898;
+}
+.modal-content .modal-body form .message .little-heading .fa-stack .fa-stack-2x {
+  font-size: 20px;
+}
+.modal-content .modal-body form .message .little-heading .customize-for-channels {
+  color: #1896DC;
+  font-weight: 400;
+}
+.modal-content .modal-body form .message textarea {
+  resize: none;
+  margin-bottom: 50px;
+}
+.modal-content .modal-body form .message .action-buttons .btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+}
+.modal-content .modal-body form .message .action-buttons .btn-link {
+  text-decoration: underline;
+  text-decoration-color: #C4C7CA;
+  padding: 10px 25px;
+  color: #414141;
+}
+.modal-content .modal-body form .message .action-buttons .btn-primary {
+  background: #1896DC;
+  border-color: #1896DC;
+  padding: 10px 75px;
+  border-radius: 21px;
+}
